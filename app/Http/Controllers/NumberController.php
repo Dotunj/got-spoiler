@@ -14,7 +14,7 @@ class NumberController extends Controller
     {
     	$number = Number::all();
 
-    	return response()->json(['data'=>$number], 200);
+    	return response()->json(['data'=>$number], ['status'=>200]);
     }
     
     public function store(Request $request)
@@ -24,15 +24,15 @@ class NumberController extends Controller
     	$number->phone_no = $request->phone_no;
 
     	if($number->save()) {
-             return response()->json(['success'=>'stored', 200]);
+             return response()->json(['success'=>'stored', ['status'=>200]]);
     	} else {
-    		return response()->json(['error'=>'could_not_store', 500]);
+    		return response()->json(['error'=>'could_not_store', ['status'=>500]]);
     	}
     }
 
     public function test()
     {
-    	return response()->json(['success'=>'it_works', 200]);
+    	return response()->json(['success'=>'it_works', ['status'=>200]]);
     }
 
 }
