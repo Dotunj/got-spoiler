@@ -32,7 +32,7 @@ class NumberController extends Controller
 
     public function test()
     {
-    	return "test";
+    	return response()->json(['success'=>'it_works', 200]);
     }
 
 }
