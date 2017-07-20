@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Dingo\Api\Routing\Helpers;
+use Dingo\Api\Http\FormRequest;
 use Illuminate\Http\Request;
 use App\Number;
 
@@ -23,7 +24,9 @@ class NumberController extends Controller
     public function store(Request $request)
     {
     	$number = new Number;
-
+         $this->validate($request, [
+            'phone_no'=>'required|unique:numbers',
+            ]);
     	$number->phone_no = $request->phone_no;
 
     	if($number->save()) {
