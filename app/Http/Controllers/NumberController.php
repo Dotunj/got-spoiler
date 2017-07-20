@@ -24,7 +24,7 @@ class NumberController extends Controller
     public function store(Request $request)
     {
     	$number = new Number;
-         $validator = Validator::make($request->all, [
+         $validator = \Validator::make($request->all, [
             'phone_no'=>'required|unique:numbers',
             ]);
          if($validator->fails()){
