@@ -14,7 +14,7 @@ class NumberController extends Controller
     {
     	$number = Number::all();
 
-    	return $this->response()->json(['data'=>$number], 200);
+    	return response()->json(['data'=>$number], 200);
     }
     
     public function store(Request $request)
