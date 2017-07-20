@@ -14,7 +14,7 @@ class NumberController extends Controller
     {
     	$number = Number::all();
 
-    	return $number;
+    	return $this->response->array(['data'=>$number], 200);
     }
     
     public function store(Request $request)
