@@ -14,7 +14,7 @@ class NumberController extends Controller
     {
     	$number = Number::all();
 
-    	return $this->response->array(['data'=>$number], 200);
+    	return $this->response()->json(['data'=>$number], 200);
     }
     
     public function store(Request $request)
@@ -24,9 +24,9 @@ class NumberController extends Controller
     	$number->phone_no = $request->phone_no;
 
     	if($number->save()) {
-             return $this->response->created();
+             return response()->json(['success'=>'stored', 200]);
     	} else {
-    		return $this->response->errorBadRequest();
+    		return response()->json(['error'=>'could_not_store', 500]);
     	}
     }
 
