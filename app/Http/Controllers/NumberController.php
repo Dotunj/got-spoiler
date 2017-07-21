@@ -24,16 +24,10 @@ class NumberController extends Controller
     public function store(Request $request)
     {
     	$number = new Number;
-       try{
+
         $this->validate($request, [
           'phone_no'=>'required|unique:numbers',
             ]);
-      } catch(ValidationException $e){
-          return response()->json([
-            'error'=>'Number already exists',
-            'status code'=>503,
-            ]);
-      }
     	$number->phone_no = $request->phone_no;
 
     	if($number->save()) {
