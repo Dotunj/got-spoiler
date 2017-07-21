@@ -24,15 +24,16 @@ class NumberController extends Controller
     public function store(Request $request)
     {
     	$number = new Number;
-         $validator = \Validator::make($request->all, [
-            'phone_no'=>'required|unique:numbers',
+       try{
+        $this->validate($request, [
+          'phone_no'=>'required|unique:numbers',
             ]);
-         if($validator->fails()){
-            return response()->json([
-                 'error'=>'Number already exists',
-                  'status code'=>503,
-                ]);
-         }
+      } catch(ValidationException $e){
+          return response()->json([
+            'error'=>'Number already exists',
+            'status code'=>503,
+            ]);
+      }
     	$number->phone_no = $request->phone_no;
 
     	if($number->save()) {
