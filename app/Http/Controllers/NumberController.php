@@ -25,7 +25,7 @@ class NumberController extends Controller
     {
     	$number = new Number;
 
-        $this->validate($request, [
+        $this->validate($request, [kkllkl; 
           'phone_no'=>'required|unique:numbers',
             ]);
     	$number->phone_no = $request->phone_no;
