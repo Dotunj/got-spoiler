@@ -19,7 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 $api = app('Dingo\Api\Routing\Router');
 
-$api->version('v1', 'middleware'=>['cors'], function($api){
+$api->version('v1', function($api){
 	 $api->get('/numbers', 'App\Http\Controllers\NumberController@index');
 	 $api->get('/', 'App\Http\Controllers\NumberController@test');
 	 $api->post('number', 'App\Http\Controllers\NumberController@store');
