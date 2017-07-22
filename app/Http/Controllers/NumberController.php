@@ -25,7 +25,7 @@ class NumberController extends Controller
     {
     	$number = new Number;
 
-        $this->validate($request, [ 
+        $this->validate($request, [
           'phone_no'=>'required|unique:numbers',
             ]);
     	$number->phone_no = $request->phone_no;
@@ -43,12 +43,16 @@ class NumberController extends Controller
     	}
     }
 
-    public function test()
+    public function test(Request $request)
     {
-    	return response()->json([
+         return $request->headers->has('Origin');
+    	
+      /*
+        return response()->json([
             'success'=>'it works', 
             'status'=>200,
         ]);
+        */
     }
 
 }
