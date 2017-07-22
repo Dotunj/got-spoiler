@@ -4,8 +4,71 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f84acd8c933ff8fcdddf40b7c00e858a",
+    "content-hash": "d9df898b21565bc747fa8230e2e99c95",
     "packages": [
+        {
+            "name": "barryvdh/laravel-cors",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-cors.git",
+                "reference": "15b588b76b4b3f736a731ce7d61d4a92e43ad567"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-cors/zipball/15b588b76b4b3f736a731ce7d61d4a92e43ad567",
+                "reference": "15b588b76b4b3f736a731ce7d61d4a92e43ad567",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.3.x|5.4.x|5.5.x",
+                "php": ">=5.5.9",
+                "symfony/http-foundation": "~3.1",
+                "symfony/http-kernel": "~3.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.x",
+                "phpunit/phpunit": "^4.8|^5.2",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Cors\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Cors\\": "src/"
+                },
+                "classmap": [
+                    "tests"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Adds CORS (Cross-Origin Resource Sharing) headers support in your Laravel application",
+            "keywords": [
+                "api",
+                "cors",
+                "crossdomain",
+                "laravel"
+            ],
+            "time": "2017-07-08 17:55:25"
+        },
         {
             "name": "dingo/api",
             "version": "dev-master",
@@ -78,7 +141,7 @@
                 "laravel",
                 "restful"
             ],
-            "time": "2017-02-10T00:56:04+00:00"
+            "time": "2017-02-10 00:56:04"
         },
         {
             "name": "dingo/blueprint",
@@ -134,7 +197,7 @@
                 "docs",
                 "laravel"
             ],
-            "time": "2017-02-11T17:28:57+00:00"
+            "time": "2017-02-11 17:28:57"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -302,7 +365,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2015-11-06T14:35:42+00:00"
+            "time": "2015-11-06 14:35:42"
         },
         {
             "name": "doctrine/lexer",
@@ -356,7 +419,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2014-09-09T13:34:57+00:00"
+            "time": "2014-09-09 13:34:57"
         },
         {
             "name": "erusev/parsedown",
@@ -493,12 +556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4ef0856b9f206f80441e80c56668523f8b3292c5"
+                "reference": "a61a234a69079b9509757b19133c7f4c358b7be1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4ef0856b9f206f80441e80c56668523f8b3292c5",
-                "reference": "4ef0856b9f206f80441e80c56668523f8b3292c5",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a61a234a69079b9509757b19133c7f4c358b7be1",
+                "reference": "a61a234a69079b9509757b19133c7f4c358b7be1",
                 "shasum": ""
             },
             "require": {
@@ -614,7 +677,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-07-19T19:29:16+00:00"
+            "time": "2017-07-20 19:12:26"
         },
         {
             "name": "laravel/tinker",
@@ -677,7 +740,7 @@
                 "laravel",
                 "psysh"
             ],
-            "time": "2017-07-13T13:11:05+00:00"
+            "time": "2017-07-13 13:11:05"
         },
         {
             "name": "league/flysystem",
@@ -760,7 +823,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2017-07-13T22:37:58+00:00"
+            "time": "2017-07-13 22:37:58"
         },
         {
             "name": "league/fractal",
@@ -824,7 +887,7 @@
                 "league",
                 "rest"
             ],
-            "time": "2017-06-12T11:04:56+00:00"
+            "time": "2017-06-12 11:04:56"
         },
         {
             "name": "monolog/monolog",
@@ -902,7 +965,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19T01:22:40+00:00"
+            "time": "2017-06-19 01:22:40"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -999,7 +1062,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2017-02-06T22:02:47+00:00"
+            "time": "2017-02-06 22:02:47"
         },
         {
             "name": "nikic/php-parser",
@@ -1050,7 +1113,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2017-07-19T15:13:10+00:00"
+            "time": "2017-07-19 15:13:10"
         },
         {
             "name": "paragonie/random_compat",
@@ -1152,7 +1215,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2017-04-30T11:58:12+00:00"
+            "time": "2017-04-30 11:58:12"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -1291,7 +1354,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "psy/psysh",
@@ -1299,12 +1362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "5617c17274f8e4e83fc83e4eba5ead3202dd64b4"
+                "reference": "54b77e3e1e6bc7b26f16cc798506b663048eeba9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/5617c17274f8e4e83fc83e4eba5ead3202dd64b4",
-                "reference": "5617c17274f8e4e83fc83e4eba5ead3202dd64b4",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/54b77e3e1e6bc7b26f16cc798506b663048eeba9",
+                "reference": "54b77e3e1e6bc7b26f16cc798506b663048eeba9",
                 "shasum": ""
             },
             "require": {
@@ -1364,7 +1427,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2017-07-19T05:51:26+00:00"
+            "time": "2017-07-22 15:14:28"
         },
         {
             "name": "ramsey/uuid",
@@ -1446,7 +1509,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2017-03-26T21:03:42+00:00"
+            "time": "2017-03-26 21:03:42"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1500,7 +1563,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-05-19T18:47:58+00:00"
+            "time": "2017-05-19 18:47:58"
         },
         {
             "name": "symfony/console",
@@ -1508,12 +1571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "23ae25d68ac02125ec17ace52c01a245095ee650"
+                "reference": "91bd0379529098917a6f9523b164ba56e4a789d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/23ae25d68ac02125ec17ace52c01a245095ee650",
-                "reference": "23ae25d68ac02125ec17ace52c01a245095ee650",
+                "url": "https://api.github.com/repos/symfony/console/zipball/91bd0379529098917a6f9523b164ba56e4a789d6",
+                "reference": "91bd0379529098917a6f9523b164ba56e4a789d6",
                 "shasum": ""
             },
             "require": {
@@ -1570,7 +1633,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-19T10:10:53+00:00"
+            "time": "2017-07-22 18:13:43"
         },
         {
             "name": "symfony/css-selector",
@@ -1623,7 +1686,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2017-05-17T16:21:40+00:00"
+            "time": "2017-05-17 16:21:40"
         },
         {
             "name": "symfony/debug",
@@ -1679,7 +1742,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-06T13:36:30+00:00"
+            "time": "2017-07-06 13:36:30"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1742,7 +1805,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-12T16:03:21+00:00"
+            "time": "2017-06-12 16:03:21"
         },
         {
             "name": "symfony/finder",
@@ -1791,7 +1854,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-01T21:02:15+00:00"
+            "time": "2017-06-01 21:02:15"
         },
         {
             "name": "symfony/http-foundation",
@@ -1799,12 +1862,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "05871b5b3289892ad560bfec0fc5300628afb7b0"
+                "reference": "0c4bf18214f040537c47ff8ecabdf10278bdf689"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/05871b5b3289892ad560bfec0fc5300628afb7b0",
-                "reference": "05871b5b3289892ad560bfec0fc5300628afb7b0",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/0c4bf18214f040537c47ff8ecabdf10278bdf689",
+                "reference": "0c4bf18214f040537c47ff8ecabdf10278bdf689",
                 "shasum": ""
             },
             "require": {
@@ -1844,7 +1907,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-17T14:07:19+00:00"
+            "time": "2017-07-21 11:05:08"
         },
         {
             "name": "symfony/http-kernel",
@@ -1929,7 +1992,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-15T08:52:56+00:00"
+            "time": "2017-07-15 08:52:56"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1988,7 +2051,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14T15:44:48+00:00"
+            "time": "2017-06-14 15:44:48"
         },
         {
             "name": "symfony/process",
@@ -2037,7 +2100,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-15T08:52:56+00:00"
+            "time": "2017-07-15 08:52:56"
         },
         {
             "name": "symfony/routing",
@@ -2115,7 +2178,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-07-11T06:35:47+00:00"
+            "time": "2017-07-11 06:35:47"
         },
         {
             "name": "symfony/translation",
@@ -2182,7 +2245,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-06T06:49:25+00:00"
+            "time": "2017-07-06 06:49:25"
         },
         {
             "name": "symfony/var-dumper",
@@ -2190,12 +2253,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "c8024182da5e925e5744405e10db97cc7ca72924"
+                "reference": "39882650cfaf3274adfafdeebb25b856634d17d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c8024182da5e925e5744405e10db97cc7ca72924",
-                "reference": "c8024182da5e925e5744405e10db97cc7ca72924",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/39882650cfaf3274adfafdeebb25b856634d17d9",
+                "reference": "39882650cfaf3274adfafdeebb25b856634d17d9",
                 "shasum": ""
             },
             "require": {
@@ -2211,6 +2274,7 @@
             },
             "suggest": {
                 "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
+                "ext-intl": "To show region name in time zone dump",
                 "ext-symfony_debug": ""
             },
             "type": "library",
@@ -2250,7 +2314,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2017-07-19T09:38:19+00:00"
+            "time": "2017-07-21 12:36:41"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -2347,7 +2411,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2017-02-03T22:05:04+00:00"
+            "time": "2017-02-03 22:05:04"
         },
         {
             "name": "webmozart/assert",
@@ -2397,22 +2461,22 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-11-23T20:04:41+00:00"
+            "time": "2016-11-23 20:04:41"
         }
     ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
-            "version": "dev-master",
+            "version": "1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "5acd2bd8c2b600ad5cc4c9180ebf0a930604d6a5"
+                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/5acd2bd8c2b600ad5cc4c9180ebf0a930604d6a5",
-                "reference": "5acd2bd8c2b600ad5cc4c9180ebf0a930604d6a5",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
+                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
                 "shasum": ""
             },
             "require": {
@@ -2453,7 +2517,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2017-02-16T16:15:51+00:00"
+            "time": "2015-06-14T21:17:01+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -3688,6 +3752,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "barryvdh/laravel-cors": 20,
         "dingo/api": 20
     },
     "prefer-stable": false,
