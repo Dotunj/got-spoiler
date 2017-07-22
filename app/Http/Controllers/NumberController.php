@@ -45,14 +45,14 @@ class NumberController extends Controller
 
     public function test(Request $request)
     {
-         return $request->headers->has('Origin');
+         //return $request->headers->has('Origin');
     	
-      /*
+    
         return response()->json([
             'success'=>'it works', 
             'status'=>200,
         ]);
-        */
+        
     }
 
 }
