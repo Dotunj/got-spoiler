@@ -11,7 +11,7 @@ return [
     | header
     |
     */
-    'header_key' => 'X-Authorization',
+    'header_key' => '2ea60e624fedbac3ec302f65ffb4e7a190329641',
 
     'models' => [
 
