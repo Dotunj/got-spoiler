@@ -13,7 +13,7 @@ return [
     */
    
     'supportsCredentials' => false,
-    'allowedOrigins' => ['*'],
+    'allowedOrigins' => ['https://gotspoileralert.com/'],
     'allowedHeaders' => ['X-Authorization'],
     'allowedMethods' => ['*'],
     'exposedHeaders' => [],
