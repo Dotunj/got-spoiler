@@ -29,7 +29,7 @@ class NumberController extends Controller
           'phone_no'=>'required|unique:numbers',
             ]);
     	$number->phone_no = $request->phone_no;
-
+        $number->email= $request->email_address;
     	if($number->save()) {
              return response()->json([
             'success'=>'stored', 

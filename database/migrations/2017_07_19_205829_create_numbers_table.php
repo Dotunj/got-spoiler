@@ -16,6 +16,7 @@ class CreateNumbersTable extends Migration
         Schema::create('numbers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('phone_no')->unique();
+            $table->string('email');
             $table->timestamps();
         });
     }
